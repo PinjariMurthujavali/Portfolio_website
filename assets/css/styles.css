@@ -3,7 +3,7 @@
 
 /*======  HEADER ====== */
 @media (min-width:768px) and (max-width:1920px) {
-  .header-logo {
+  a.header-logo {
     font-size: 44px;
   }
 }
