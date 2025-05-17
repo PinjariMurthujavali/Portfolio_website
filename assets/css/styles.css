@@ -645,6 +645,7 @@ h2 {
   }
   .home {
     padding: 10rem 0 2rem;
+    max-width:1280px;
   }
   .home__img {
     width: 450px;
