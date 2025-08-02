@@ -1,462 +1,954 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="header-logo">Murthu-Folio</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Murthu</span><br> Software Developer</h1>
-
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/murthujavali-pinjari18/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/PinjariMurthujavali" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/profile.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-            <h2 class="about__subtitle">I'am Murthu</h2>
-            <p class="about__text">I'm an enthusiastic software developer with a strong passion for web development, AI, WordPress, and innovative tech solutions. Holding a degree in Electronics and Communication Engineering, I specialize in Python, Java, WordPress, and modern web technologies. I thrive on solving real-world problems through code and am committed to contributing to impactful projects that make a difference.
-            </p>
-                    <br>
-                        <br>
-            <p class="about__text">
-                I'm also the creator of <strong>'Syntax Solver'</strong> on YouTube, where I share tutorials on coding, DSA, and project development. I aim to make learning tech more accessible and fun for everyone.
-            </p>
-        </div>                                     
-                </div>
-            </section>
-<!--====EXPERIENCE====-->
-
-            <div class="container">
-                <!-- Experience Section -->
-                <div class="column">
-                  <h2>Experience</h2>
-                  <div class="timeline">
-                    <div class="timeline-line"></div>
-              
-                    <div class="timeline-item">
-                      <div class="date-label highlight-red">Feb 2025 - May 2025</div>
-                      <div class="card">
-                        <h3>WordPress Integrator </h3>
-                        <h4>Vsplash Techlabs Private Limited</h4>
-                        <p>Worked on WordPress-based website integration and customization. Involved in implementing responsive designs, integrating plugins, and optimizing website performance for SEO and speed.</p>
-                        <p class="tech-stack">Tech Stack: WordPress, HTML, CSS, JavaScript</p>
-                      </div>
-                    </div>
-              
-                    <div class="timeline-item">
-                      <div class="date-label highlight-red">2024</div>
-                      <div class="card">
-                        <h3>Python Full Stack Intern</h3>
-                        <h4>Durga Software Solutions</h4>
-                        <p>Completed intensive training and internship on Python Full Stack development. Gained hands-on experience in backend and frontend development, including database integration and REST API development.</p>
-                        <p class="tech-stack">Tech Stack: Python, Django, HTML, CSS, JavaScript, SQL</p>
-                      </div>
-                    </div>
-              
-                    <div class="timeline-item">
-                      <div class="date-label">2024</div>
-                      <div class="card">
-                        <h3>Web Full Stack Intern</h3>
-                        <h4>Eduskills Academy</h4>
-                        <p>Completed a virtual internship on Full Stack Web Development. Worked on real-world web development projects using modern technologies and frameworks.</p>
-                        <p class="tech-stack">Tech Stack: HTML, CSS, JavaScript, SQL, Django</p>
-                      </div>
-                    </div>
-              
-                    <div class="timeline-item">
-                      <div class="date-label">2022</div>
-                      <div class="card">
-                        <h3>Intern Student Coordinator</h3>
-                        <h4>Eduskills Academy</h4>
-                        <p>Served as a student coordinator for 3 years, helping fellow students with technical guidance, internship onboarding, and ensuring the smooth functioning of training programs.</p>
-                        <p class="tech-stack">Skills: Team Coordination, Technical Support, Communication</p>
-                      </div>
-                    </div>
-              
-                    <div class="timeline-item">
-                      <div class="date-label">2023</div>
-                      <div class="card">
-                        <h3>SMART INDIA HACKATHON 2023</h3>
-                        <h4>Government of India Initiative</h4>
-                        <p>Secured 2nd prize in the national-level hackathon for providing an innovative software solution to a real-world problem.</p>
-                        <p class="tech-stack">Tech Stack: Python, JavaScript, SQL, Team Collaboration Tools</p>
-                      </div>
-                    </div>
-                  </div>
-              
-                  <h2>Projects</h2>
-                  <div class="timeline">
-                    <div class="timeline-line"></div>
-              
-                    <div class="timeline-item">
-                        <div class="date-label highlight-red">2024</div>
-                        <div class="card">
-                          <h3>Employee Management System</h3>
-                          <h4>Academic Project</h4>
-                          <p>A web-based application designed to manage employee records efficiently. It includes features such as employee registration, role assignment, department management, attendance tracking, and performance evaluation.</p>
-                          <p class="tech-stack">Tech Stack: Java, HTML, CSS, JavaScript, MySQL</p>
-                        </div>
-                      </div>
-                      
-                      <div class="timeline-item">
-                        <div class="date-label highlight-red">2024</div>
-                        <div class="card">
-                          <h3>Student Management System</h3>
-                          <h4>Personal Project</h4>
-                          <p>A Django-based application that helps manage student records efficiently, including functionalities for student enrollment, attendance tracking, marks entry, course allocation, and performance analysis.</p>
-                          <p>Modules include: User Authentication, CRUD operations for students, subject-wise performance tracking, and admin dashboard.</p>
-                          <p class="tech-stack">Tech Stack: Python, Django, HTML, CSS, JavaScript, SQLite/MySQL</p>
-                        </div>
-                      </div>
-                      
-                    <div class="timeline-item">
-                      <div class="date-label">2024</div>
-                      <div class="card">
-                        <h3>Portfolio Website</h3>
-                        <h4>Personal Project</h4>
-                        <p>Designed and developed a personal portfolio website to showcase projects, certifications, and achievements.</p>
-                        <p class="tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
-                        <a href="#">Click Here</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              
-                <!-- Education Section -->
-                <div class="column">
-                  <h2>Education</h2>
-                  <div class="timeline">
-                    <div class="timeline-line"></div>
-              
-                    <div class="timeline-item">
-                      <div class="date-label highlight-red">2024</div>
-                      <div class="card">
-                        <h3>B.Tech in Electronics and Communication Engineering</h3>
-                        <h4>Santhiram Engineering College, Andhra Pradesh</h4>
-                        <p>CGPA: 8.0 / 10</p>
-                      </div>
-                    </div>
-              
-                    <div class="timeline-item">
-                      <div class="date-label">2020</div>
-                      <div class="card">
-                        <h3>Intermediate (MPC)</h3>
-                        <h4>KNR Memorial Junior College</h4>
-                        <p>Percentage: 74%</p>
-                      </div>
-                    </div>
-              
-                    <div class="timeline-item">
-                      <div class="date-label">2018</div>
-                      <div class="card">
-                        <h3>SSC (10th)</h3>
-                        <h4>Sri Raja Rajeswari High School</h4>
-                        <p>Percentage: 85%</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                            
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">I possess a strong foundation in full-stack web development and software engineering, with hands-on experience in both frontend and backend technologies. My skill set includes:</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-wordpress skills__icon'></i>
-                                <span class="skills__name">Wordpress</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-python skills__icon'></i>
-                                <span class="skills__name">Python</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fas fa-database skills__icon"></i>                                
-                                <span class="skills__name">SQL</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-django skills__icon'></i>
-                                <span class="skills__name">Django</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-jquery skills__icon'></i>
-                                <span class="skills__name">jQuery</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-bootstrap skills__icon'></i>
-                                <span class="skills__name">Bootstrap</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
-
-
-
-            <!--===CERTIFICATIONS=====-->
-
-            <section>
-            <div class="container-certification">
-                <h2>Certifications</h2>
-                <div class="certification-gallery">
-              
-                  <div class="cert-card">
-                    <h4>Python Full Stack Developer</h4>
-                    <p>Durga Software Solutions, Hyderabad</p>
-                  </div>
-              
-                  <div class="cert-card">
-                    <h4>Web Development Certification</h4>
-                    <p>American Indian Foundation (S&P GLOBAL), Hyderabad</p>
-                  </div>
-              
-                  <div class="cert-card">
-                    <h4>Java Certification</h4>
-                    <p>SoloLearn</p>
-                  </div>
-              
-                  <div class="cert-card">
-                    <h4>SQL Fundamentals Certification</h4>
-                    <p>HackerRank</p>
-                  </div>
-              
-                  <div class="cert-card">
-                    <h4>Python Data Structures</h4>
-                    <p>SoloLearn</p>
-                  </div>
-              
-                  <div class="cert-card">
-                    <h4>WordPress Developer Certification</h4>
-                    <p>Vsplash Techlabs Private Limited, Hyderabad</p>
-                  </div>
-              
-                  <div class="cert-card">
-                    <h4>Beaver Builder Certification</h4>
-                    <p>Vsplash Techlabs Private Limited, Hyderabad</p>
-                  </div>
-              
-                  <div class="cert-card">
-                    <h4>WooCommerce Developer Certification</h4>
-                    <p>Vsplash Techlabs Private Limited, Hyderabad</p>
-                  </div>
-              
-                  <div class="cert-card">
-                    <h4>TCS iON Career Edge</h4>
-                    <p>Communication, Resume Writing & Soft Skills</p>
-                  </div>
-              
-                </div>
-            </div>
-              </section>
-                            
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Murthu</p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/murthujavali-pinjari18/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/PinjariMurthujavali" class="footer__icon"><i class='bx bxl-github' ></i></a>
-            </div>
-            <p class="footer__copy">&#169; Murthu_creations. All rigths reserved</p>
-        </footer>
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
-</html>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  
+    <title>Murthu's Portfolio - Software Developer</title>  <!-- More Descriptive Title -->  
+    <meta name="description" content="Murthu's portfolio showcasing skills in web development, Python, Java, WordPress, and projects."> <!--  Important for SEO -->  
+  
+    <!-- Favicon (optional) -->  
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">  
+  
+    <!-- Stylesheets -->  
+    <link rel="stylesheet" href="assets/css/styles.css">  
+  
+    <!-- Boxicons (Icons) -->  
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+  
+    <!-- Open Graph / SEO Tags -->  
+    <meta property="og:title" content="Murthu's Portfolio">  
+    <meta property="og:description" content="Showcasing skills in web development, Python, Java, and WordPress.">  
+    <meta property="og:image" content="assets/img/profile.png">  <!-- Use a representative image -->  
+    <meta property="og:url" content="[Your Portfolio URL]">  <!-- Replace with your actual URL -->  
+    <meta property="og:type" content="website">  
+</head>  
+<body>  
+  
+    <!-- ================== HEADER ================== -->                     
+    <header class="l-header">  
+        <nav class="nav bd-grid">  
+            <div>  
+                <a href="#" class="nav__logo">Murthu-Folio</a>  <!-- Use nav__logo class -->  
+            </div>  
+  
+            <div class="nav__menu" id="nav-menu">  
+                <ul class="nav__list">  
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>  
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>  
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>  
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a> <!-- Added Experience to Nav -->  
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a> <!-- Added Projects to Nav -->  
+                    <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a> <!-- Added Certifications to Nav -->  
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>  
+                </ul>  
+            </div>  
+  
+            <div class="nav__toggle" id="nav-toggle">  
+                <i class='bx bx-menu'></i>  
+            </div>  
+        </nav>  
+    </header>  
+  
+    <main class="l-main">  
+  
+        <!-- ================== HOME ================== -->  
+        <section class="home bd-grid" id="home">  
+            <div class="home__data">  
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Murthu</span><br> Software Developer</h1>  
+                <p class="home__description">Passionate Software Developer specializing in Full-Stack Web Development, AI, and WordPress.</p> <!-- Added a brief description -->  
+                <a href="#contact" class="button">Contact Me</a>  <!-- More friendly button text -->  
+            </div>  
+  
+            <div class="home__social">  
+                <a href="https://www.linkedin.com/in/murthujavali-pinjari18/" class="home__social-icon" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>  
+                <a href="https://github.com/PinjariMurthujavali" class="home__social-icon" aria-label="GitHub Profile"><i class='bx bxl-github' ></i></a>  
+                <!-- Add other social links here (e.g., Twitter, YouTube) -->  
+            </div>  
+  
+            <div class="home__img">  
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">  
+                    <mask id="mask0" mask-type="alpha">  
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>  
+                    </mask>  
+                    <g mask="url(#mask0)">  
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>  
+                        <image class="home__blob-img" x="50" y="60" href="assets/img/profile.png" alt="Murthu's Profile Picture"/>  <!-- Added alt text -->  
+                    </g>  
+                </svg>  
+            </div>  
+        </section>  
+  
+        <!-- ================== ABOUT ================== -->  
+        <section class="about section" id="about">  
+            <h2 class="section-title">About Me</h2> <!-- More accessible heading -->  
+  
+            <div class="about__container bd-grid">  
+                <div class="about__img">  
+                    <img src="assets/img/about.jpg" alt="Murthu - Software Developer">  <!-- Added alt text -->  
+                </div>  
+  
+                <div>  
+                    <h2 class="about__subtitle">I'm Murthu</h2>  
+                    <p class="about__text">I'm an enthusiastic software developer with a strong passion for web development, AI, WordPress, and innovative tech solutions. Holding a degree in Electronics and Communication Engineering, I specialize in Python, Java, WordPress, and modern web technologies. I thrive on solving real-world problems through code and am committed to contributing to impactful projects that make a difference.</p>  
+                    <p class="about__text">I'm also the creator of <strong>'Syntax Solver'</strong> on YouTube, where I share tutorials on coding, DSA, and project development. I aim to make learning tech more accessible and fun for everyone.</p>  
+                </div>  
+            </div>  
+        </section>  
+  
+        <!-- ================== EXPERIENCE ================== -->  
+        <section class="experience section" id="experience">  <!-- Added ID for navigation -->  
+            <h2 class="section-title">Experience & Education</h2>  
+            <div class="container">  
+                <div class="timeline">  
+                    <div class="timeline-line"></div>  
+  
+                    <!-- Timeline Item 1 -->  
+                    <div class="timeline-item">  
+                        <div class="date-label highlight-red">Feb 2025 - May 2025</div>  
+                        <div class="card">  
+                            <h3>WordPress Integrator</h3>  
+                            <h4>Vsplash Techlabs Private Limited</h4>  
+                            <p>Worked on WordPress-based website integration and customization. Implemented responsive designs, integrated plugins, and optimized website performance for SEO and speed.</p>  
+                            <p class="tech-stack">Tech Stack: WordPress, HTML, CSS, JavaScript</p>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Timeline Item 2 -->  
+                    <div class="timeline-item">  
+                        <div class="date-label highlight-red">2024</div>  
+                        <div class="card">  
+                            <h3>Python Full Stack Intern</h3>  
+                            <h4>Durga Software Solutions</h4>  
+                            <p>Completed intensive training and internship on Python Full Stack development. Gained hands-on experience in backend and frontend development, including database integration and REST API development.</p>  
+                            <p class="tech-stack">Tech Stack: Python, Django, HTML, CSS, JavaScript, SQL</p>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Timeline Item 3 -->  
+                    <div class="timeline-item">  
+                        <div class="date-label">2024</div>  
+                        <div class="card">  
+                            <h3>Web Full Stack Intern</h3>  
+                            <h4>Eduskills Academy</h4>  
+                            <p>Completed a virtual internship on Full Stack Web Development. Worked on real-world web development projects using modern technologies and frameworks.</p>  
+                            <p class="tech-stack">Tech Stack: HTML, CSS, JavaScript, SQL, Django</p>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Timeline Item 4 -->  
+                    <div class="timeline-item">  
+                        <div class="date-label">2022</div>  
+                        <div class="card">  
+                            <h3>Intern Student Coordinator</h3>  
+                            <h4>Eduskills Academy</h4>  
+                            <p>Served as a student coordinator for 3 years, helping fellow students with technical guidance, internship onboarding, and ensuring the smooth functioning of training programs.</p>  
+                            <p class="tech-stack">Skills: Team Coordination, Technical Support, Communication</p>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Timeline Item 5 -->  
+                    <div class="timeline-item">  
+                        <div class="date-label">2023</div>  
+                        <div class="card">  
+                            <h3>SMART INDIA HACKATHON 2023</h3>  
+                            <h4>Government of India Initiative</h4>  
+                            <p>Secured 2nd prize in the national-level hackathon for providing an innovative software solution to a real-world problem.</p>  
+                            <p class="tech-stack">Tech Stack: Python, JavaScript, SQL, Team Collaboration Tools</p>  
+                        </div>  
+                    </div>  
+                     <!-- Timeline Item 6 -->  
+                     <div class="timeline-item">  
+                        <div class="date-label highlight-red">2024</div>  
+                        <div class="card">  
+                            <h3>B.Tech in Electronics and Communication Engineering</h3>  
+                            <h4>Santhiram Engineering College, Andhra Pradesh</h4>  
+                            <p>CGPA: 8.0 / 10</p>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Timeline Item 7 -->  
+                    <div class="timeline-item">  
+                        <div class="date-label">2020</div>  
+                        <div class="card">  
+                            <h3>Intermediate (MPC)</h3>  
+                            <h4>KNR Memorial Junior College</h4>  
+                            <p>Percentage: 74%</p>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Timeline Item 8 -->  
+                    <div class="timeline-item">  
+                        <div class="date-label">2018</div>  
+                        <div class="card">  
+                            <h3>SSC (10th)</h3>  
+                            <h4>Sri Raja Rajeswari High School</h4>  
+                            <p>Percentage: 85%</p>  
+                        </div>  
+                    </div>  
+  
+                </div>  
+            </div>  
+        </section>  
+  
+        <!-- ================== SKILLS ================== -->  
+        <section class="skills section" id="skills">  
+            <h2 class="section-title">Skills</h2>  
+  
+            <div class="skills__container bd-grid">  
+                <div>  
+                    <h2 class="skills__subtitle">Professional Skills</h2>  
+                    <p class="skills__text">I possess a strong foundation in full-stack web development and software engineering, with hands-on experience in both frontend and backend technologies. My skill set includes:</p>  
+                    <div class="skills__data">  
+                        <div class="skills__names">  
+                            <i class='bx bxl-html5 skills__icon'></i>  
+                            <span class="skills__name">HTML5</span>  
+                        </div>  
+                        <div class="skills__bar skills__html"></div>  
+                        <div>  
+                            <span class="skills__percentage">95%</span>  
+                        </div>  
+                    </div>  
+                    <div class="skills__data">  
+                        <div class="skills__names">  
+                            <i class='bx bxl-css3 skills__icon'></i>  
+                            <span class="skills__name">CSS3</span>  
+                        </div>  
+                        <div class="skills__bar skills__css"></div>  
+                        <div>  
+                            <span class="skills__percentage">85%</span>  
+                        </div>  
+                    </div>  
+                    <div class="skills__data">  
+                        <div class="skills__names">  
+                            <i class='bx bxl-javascript skills__icon' ></i>  
+                            <span class="skills__name">JAVASCRIPT</span>  
+                        </div>  
+                        <div class="skills__bar skills__js"></div>  
+                        <div>  
+                            <span class="skills__percentage">65%</span>  
+                        </div>  
+                    </div>  
+                    <div class="skills__data">  
+                        <div class="skills__names">  
+                            <i class='bx bxl-wordpress skills__icon'></i>  
+                            <span class="skills__name">Wordpress</span>  
+                        </div>  
+                        <div class="skills__bar skills__ux"></div>  
+                        <div>  
+                            <span class="skills__percentage">85%</span>  
+                        </div>  
+                    </div>  
+                    <div class="skills__data">  
+                        <div class="skills__names">  
+                            <i class='bx bxl-python skills__icon'></i>  
+                            <span class="skills__name">Python</span>  
+                        </div>  
+                        <div class="skills__bar skills__ux"></div>  
+                        <div>  
+                            <span class="skills__percentage">90%</span>  
+                        </div>  
+                    </div>  
+                    <div class="skills__data">  
+                        <div class="skills__names">  
+                            <i class="fas fa-database skills__icon"></i>  
+                            <span class="skills__name">SQL</span>  
+                        </div>  
+                        <div class="skills__bar skills__ux"></div>  
+                        <div>  
+                            <span class="skills__percentage">75%</span>  
+                        </div>  
+                    </div>  
+  
+                    <div class="skills__data">  
+                        <div class="skills__names">  
+                            <i class='bx bxl-django skills__icon'></i>  
+                            <span class="skills__name">Django</span>  
+                        </div>  
+                        <div class="skills__bar skills__ux"></div>  
+                        <div>  
+                            <span class="skills__percentage">80%</span>  
+                        </div>  
+                    </div>  
+  
+                    <div class="skills__data">  
+                        <div class="skills__names">  
+                            <i class='bx bxl-jquery skills__icon'></i>  
+                            <span class="skills__name">jQuery</span>  
+                        </div>  
+                        <div class="skills__bar skills__ux"></div>  
+                        <div>  
+                            <span class="skills__percentage">65%</span>  
+                        </div>  
+                    </div>  
+  
+                    <div class="skills__data">  
+                        <div class="skills__names">  
+                            <i class='bx bxl-bootstrap skills__icon'></i>  
+                            <span class="skills__name">Bootstrap</span>  
+                        </div>  
+                        <div class="skills__bar skills__ux"></div>  
+                        <div>  
+                            <span class="skills__percentage">70%</span>  
+                        </div>  
+                    </div>  
+                </div>  
+  
+                <div>  
+                    <img src="assets/img/work3.jpg" alt="Skills Illustration" class="skills__img">  <!-- Added alt text -->  
+                </div>  
+            </div>  
+        </section>  
+  
+        <!-- ================== PROJECTS ================== -->  
+       <section class="projects-section" id="projects">  
+            <h2 class="section-title">Projects</h2>  
+                <div class="projects-container">  
+  
+                    <!-- Project 1 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/portfolio.jpg" alt="Project 1" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Portfolio Website</h3>  
+                            <p>A personal portfolio built with HTML, CSS & JS showcasing skills and achievements.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Portfolio_website/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Portfolio_website" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 2 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/todolist.jpg" alt="Project 2" class="project-img">  
+                        <div class="project-content">  
+                            <h3>To-Do List App</h3>  
+                            <p>A simple to-do app with local storage and smooth UI for managing daily tasks.</p>  
+                            <div class="buttons">  
+                                <a href="https://task-2-to-do-list-m9z3ja38q-pinjarimurthujavalis-projects.vercel.app/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/TASK-2---TO-DO-LIST" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 3 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/quizgame.jpg" alt="Project 3" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Quiz Game</h3>  
+                            <p>A fun interactive quiz game using JavaScript, with instant score calculation.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project-1---Quiz-Game/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project-1---Quiz-Game" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 4 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/Women.jpg" alt="Project 1" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Tech Women Empowerment</h3>  
+                            <p>A web platform designed to empower girls through interactive learning and technology-driven education</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Tech-For-Girl---Empower-Learn/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Tech-For-Girl---Empower-Learn" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 5 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/rock-paper-scissors-neon-icons-Picsart-AiImageEnhancer.jpg" alt="Project 2" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Rock-Paper-Scissors with AI</h3>  
+                            <p>A simple interactive Rock–Paper–Scissors game built with modern web frameworks to let you play against the computer online.</p>  
+                            <div class="buttons">  
+                                <a href="https://task-3-rock-paper-sciessors-omtor2hfk.vercel.app/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Task-3-Rock-paper-sciessors" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 6 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/calculator.jpeg" alt="Project 3" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Calculator</h3>  
+                            <p>A simple and responsive web-based calculator for quick arithmetic operations.</p>  
+                            <div class="buttons">  
+                                <a href="https://task-1-calculator-project-346jgsbnx.vercel.app/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Task-1-Calculator_project" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 7 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/hidden-search-widget..jpeg" alt="Project 1" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Hidden-Search-Widget</h3>  
+                            <p>A discreet search widget that stays hidden until needed for quick, clutter‑free access.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Hidden-Search-Widget/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Hidden-Search-Widget" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 8 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/qrcode1..jpeg" alt="Project 2" class="project-img">  
+                        <div class="project-content">  
+                            <h3>QR Code Generator</h3>  
+                            <p>A simple tool to instantly generate custom QR codes from any text or URL</p>  
+                            <div class="buttons">  
+                                <a href="https://github.com/PinjariMurthujavali/PROJECT-2-QR-CODE-GENERATOR/deployments" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/PROJECT-2-QR-CODE-GENERATOR" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 9 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/progress-Picsart-AiImageEnhancer.png" alt="Project 3" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Progress-bar-steps</h3>  
+                            <p>A step-by-step progress bar component to visually track task or form completion.</p>  
+                            <div class="buttons">  
+                                <a href="https://github.com/PinjariMurthujavali/Progress-bar-steps/deployments" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Progress-bar-steps/" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 10 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/weather-dashboard-Picsart-AiImageEnhancer.png" alt="Project 1" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Weather dashboard</h3>  
+                            <p>A dynamic weather dashboard providing real-time forecasts and location-based updates.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project-23---Weather-Dashboard/deployments" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project-23---Weather-Dashboard/" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 11 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/robot-joke-generator.jpeg" alt="Project 2" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Robot-Jokes-Generator</h3>  
+                            <p>A fun robot-themed jokes generator that delivers random techy humor at a click.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project-22-Robot-Jokes-Generator-/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project-22-Robot-Jokes-Generator-" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 12 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/expanding-cards-Picsart-AiImageEnhancer.jpeg" alt="Project 3" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Expanding cards</h3>  
+                            <p>A card-based layout that expands to reveal more information on click.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Expanding_Cards/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Expanding_Cards" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 13 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/Random-password.png" alt="Project 1" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Generate-Random-Password</h3>  
+                            <p>A simple web app that generates random passwords based on user-defined criteria.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project-10-Generate-Random-Password/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project-10-Generate-Random-Password" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 14 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/day-of-the-week.png" alt="Project 2" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Day of the Week</h3>  
+                            <p>A simple to-do app with local storage and smooth UI for managing daily tasks.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project-7-Day-of-the-Week/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project-7-Day-of-the-Week" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 15 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/input-character-counter.png" alt="Project 3" class="project-img">  
+                         <div class="project-content">  
+                            <h3>Input Character Counter</h3>  
+                            <p>A simple web application that counts the number of characters in a text input.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project-6-Input-Character-Counter/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project-6-Input-Character-Counter" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 16 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/Gradient-generator.png" alt="Project 1" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Gradient Generator</h3>  
+                            <p>A simple web application that allows users to create beautiful gradients.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project-5-Gradient-Generator/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project-5-Gradient-Generator" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 17 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/Fd-calculator.png" alt="Project 2" class="project-img">  
+                        <div class="project-content">  
+                            <h3>FD-Calculator</h3>  
+                            <p>A simple and user-friendly financial calculator web application.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project-4-FD-Calculator/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project-4-FD-Calculator" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 18 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/Notes-application.png" alt="Project 3" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Notes Application</h3>  
+                            <p>A simple and responsive web-based notes application for quick note-taking.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project-3-Notes-Application/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project-3-Notes-Application" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 19 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/simple-form.png" alt="Project 1" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Simple-Contact-Form</h3>  
+                            <p>A simple and elegant contact form for easy communication.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project---25---Simple-Contact-Form/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project---25---Simple-Contact-Form" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 20 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/poll-system.png" alt="Project 2" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Interactive Poll System</h3>  
+                            <p>A simple tool to create and manage polls with real-time results.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project---27---Interactive-Poll-System-Project-/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project---27---Interactive-Poll-System-Project-" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 21 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/Quick-url.png" alt="Project 3" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Quick URL Application</h3>  
+                            <p>A web app that allows users to shorten and manage their URLs easily.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project---26---Quick-URLs-Application-/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project---26---Quick-URLs-Application-" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 22 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/speech-reader.png" alt="Project 1" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Speech-to-Text Reader</h3>  
+                            <p>A web app that converts spoken words into written text instantly.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project-24-Speech-text-reader/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project-24-Speech-text-reader" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 23 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/Box-shadow-generator.png" alt="Project 2" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Box-Shadow-Generator</h3>  
+                            <p> A tool to create and preview CSS box shadows instantly with copyable code.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project-2-Box-Shadow-Generator/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project-2-Box-Shadow-Generator" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="#" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+  
+                    <!-- Project 24 -->  
+                    <div class="project-card">  
+                        <img src="assets/img/invalid.png" alt="Project 3" class="project-img">  
+                        <div class="project-content">  
+                            <h3>Invalid-input-shake</h3>  
+                            <p> A web project that shakes the input field when users enter invalid data, giving instant visual feedback.</p>  
+                            <div class="buttons">  
+                                <a href="https://pinjarimurthujavali.github.io/Project-1-Invalid-Input-Shake/" class="btn live-demo" target="_blank">Live Demo</a>  
+                                <a href="https://github.com/PinjariMurthujavali/Project-1-Invalid-Input-Shake" class="btn github" target="_blank">GitHub</a>  
+                                <!-- LinkedIn Button -->  
+                                <a href="#" class="btn linkedin" target="_blank">  
+                                    <i class="fab fa-linkedin"></i> LinkedIn  
+                                </a>  
+                                <!-- YouTube Button -->  
+                                <a href="" class="btn youtube" target="_blank">  
+                                    <i class="fab fa-youtube"></i> YouTube  
+                                </a>  
+                            </div>  
+                        </div>  
+                    </div>  
+                </div>  
+       </section>  
+  
+        <!-- ================== WORK (GALLERY) ================== -->  
+        <section class="work section" id="work">  
+            <h2 class="section-title">Work</h2>  
+  
+            <div class="work__container bd-grid">  
+                <a href="#" class="work__img">  
+                    <img src="assets/img/work1.jpg" alt="Work Sample 1">  <!-- Added alt text -->  
+                </a>  
+                <a href="#" class="work__img">  
+                    <img src="assets/img/work2.jpg" alt="Work Sample 2">  <!-- Added alt text -->  
+                </a>  
+                <a href="#" class="work__img">  
+                    <img src="assets/img/work3.jpg" alt="Work Sample 3">  <!-- Added alt text -->  
+                </a>  
+                <a href="#" class="work__img">  
+                    <img src="assets/img/work4.jpg" alt="Work Sample 4">  <!-- Added alt text -->  
+                </a>  
+                <a href="#" class="work__img">  
+                    <img src="assets/img/work5.jpg" alt="Work Sample 5">  <!-- Added alt text -->  
+                </a>  
+                <a href="#" class="work__img">  
+                    <img src="assets/img/work6.jpg" alt="Work Sample 6">  <!-- Added alt text -->  
+                </a>  
+            </div>  
+        </section>  
+  
+        <!-- ================== CERTIFICATIONS ================== -->  
+        <section class="certifications section" id="certifications">  <!-- Added ID for navigation -->  
+            <div class="container-certification">  
+                <h2 class="section-title">Certifications</h2>  
+                <div class="certification-gallery">  
+  
+                    <div class="cert-card">  
+                        <h4>Python Full Stack Developer</h4>  
+                        <p>Durga Software Solutions, Hyderabad</p>  
+                    </div>  
+  
+                    <div class="cert-card">  
+                        <h4>Web Development Certification</h4>  
+                        <p>American Indian Foundation (S&P GLOBAL), Hyderabad</p>  
+                    </div>  
+  
+                    <div class="cert-card">  
+                        <h4>Java Certification</h4>  
+                        <p>SoloLearn</p>  
+                    </div>  
+  
+                    <div class="cert-card">  
+                        <h4>SQL Fundamentals Certification</h4>  
+                        <p>HackerRank</p>  
+                    </div>  
+  
+                    <div class="cert-card">  
+                        <h4>Python Data Structures</h4>  
+                        <p>SoloLearn</p>  
+                    </div>  
+  
+                    <div class="cert-card">  
+                        <h4>WordPress Developer Certification</h4>  
+                        <p>Vsplash Techlabs Private Limited, Hyderabad</p>  
+                    </div>  
+  
+                    <div class="cert-card">  
+                        <h4>Beaver Builder Certification</h4>  
+                        <p>Vsplash Techlabs Private Limited, Hyderabad</p>  
+                    </div>  
+  
+                    <div class="cert-card">  
+                        <h4>WooCommerce Developer Certification</h4>  
+                        <p>Vsplash Techlabs Private Limited, Hyderabad</p>  
+                    </div>  
+  
+                    <div class="cert-card">  
+                        <h4>TCS iON Career Edge</h4>  
+                        <p>Communication, Resume Writing & Soft Skills</p>  
+                    </div>  
+  
+                </div>  
+            </div>  
+        </section>  
+  
+        <!-- ================== CONTACT ================== -->  
+        <section class="contact section" id="contact">  
+            <h2 class="section-title">Contact Me</h2>  <!-- More friendly title -->  
+  
+            <div class="contact__container bd-grid">  
+                <form action="#" class="contact__form" id="contact-form"> <!-- Added ID -->  
+                    <input type="text" placeholder="Name" class="contact__input" id="name" required> <!-- Added ID and required -->  
+                    <input type="email" placeholder="Email" class="contact__input" id="email" required> <!-- Added ID and required -->  
+                    <textarea name="message" id="message" cols="0" rows="10" class="contact__input" placeholder="Your Message" required></textarea> <!-- Added ID, name, placeholder and required -->  
+                    <button type="submit" class="contact__button button">Send Message</button>  <!-- Changed to button type submit -->  
+                </form>  
+                <p id="contact-form-status"></p>  <!-- Element to display form submission status -->  
+            </div>  
+        </section>  
+    </main>  
+  
+    <!-- ================== FOOTER ================== -->  
+    <footer class="footer">  
+        <p class="footer__title">Murthu</p>  
+        <div class="footer__social">  
+            <a href="https://www.linkedin.com/in/murthujavali-pinjari18/" class="footer__icon" aria-label="LinkedIn"><i class='bx bxl-linkedin' ></i></a>  
+            <a href="https://github.com/PinjariMurthujavali" class="footer__icon" aria-label="GitHub"><i class='bx bxl-github' ></i></a>  
+            <!-- Add other social links here -->  
+        </div>  
+        <p class="footer__copy">&#169; Murthu_creations. All rights reserved</p>  
+    </footer>  
+  
+    <!-- ================== SCROLL REVEAL ================== -->  
+    <script src="https://unpkg.com/scrollreveal"></script>  
+  
+    <!-- ================== MAIN JS ================== -->  
+    <script src="assets/js/main.js"></script>  
+    <script>  
+        //Example JavaScript For Contact Form  
+        document.getElementById('contact-form').addEventListener('submit', function(event) {  
+            event.preventDefault(); // Prevent default form submission  
+  
+            // Basic form validation  
+            const name = document.getElementById('name').value.trim();  
+            const email = document.getElementById('email').value.trim();  
+            const message = document.getElementById('message').value.trim();  
+  
+            if (!name || !email || !message) {  
+                document.getElementById('contact-form-status').textContent = 'Please fill out all fields.';  
+                return;  
+            }  
+  
+            // Simulate a successful submission (replace with actual submission logic)  
+            setTimeout(() => {  
+                document.getElementById('contact-form-status').textContent = 'Message sent successfully!';  
+                document.getElementById('name').value = '';  
+                document.getElementById('email').value = '';  
+                document.getElementById('message').value = '';  
+            }, 1500); //Simulated delay  
+        });  
+    </script>  
+</body>  
+</html>  
