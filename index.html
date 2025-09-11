@@ -25,7 +25,9 @@
     <meta property="og:url" content="[Your Portfolio URL]">  <!-- Replace with your actual URL -->  
     <meta property="og:type" content="website">  
 </head>  
-<body>  
+<body>
+    <div class="bg-3d" aria-hidden="true"></div>
+    <div class="cloak" aria-hidden="true"></div>
   
     <!-- ================== HEADER ================== -->                     
     <header class="l-header">  
@@ -90,11 +92,15 @@
                     <img src="assets/img/about.jpg" alt="Murthu - Software Developer">  <!-- Added alt text -->  
                 </div>  
   
-                <div>  
-                    <h2 class="about__subtitle">I'm Murthu</h2>  
-                    <p class="about__text">I'm an enthusiastic software developer with a strong passion for web development, AI, WordPress, and innovative tech solutions. Holding a degree in Electronics and Communication Engineering, I specialize in Python, Java, WordPress, and modern web technologies. I thrive on solving real-world problems through code and am committed to contributing to impactful projects that make a difference.</p>  
-                    <p class="about__text">I'm also the creator of <strong>'Syntax Solver'</strong> on YouTube, where I share tutorials on coding, DSA, and project development. I aim to make learning tech more accessible and fun for everyone.</p>  
-                </div>  
+                <div class="about__card">
+                    <h2 class="about__subtitle">I'm Murthu</h2>
+                    <p class="about__text">I'm an enthusiastic software developer with a strong passion for web development, AI, WordPress, and innovative tech solutions. Holding a degree in Electronics and Communication Engineering, I specialize in Python, Java, WordPress, and modern web technologies. I thrive on solving real-world problems through code and am committed to contributing to impactful projects that make a difference.</p>
+                    <p class="about__text">I'm also the creator of <strong>'Syntax Solver'</strong> on YouTube, where I share tutorials on coding, DSA, and project development. I aim to make learning tech more accessible and fun for everyone.</p>
+                    <div class="about__cta">
+                        <a href="#projects" class="button">View Projects</a>
+                        <a href="#contact" class="button" style="margin-left:12px;">Hire Me</a>
+                    </div>
+                </div>
             </div>  
         </section>  
   
@@ -201,7 +207,7 @@
                 <div>  
                     <h2 class="skills__subtitle">Professional Skills</h2>  
                     <p class="skills__text">I possess a strong foundation in full-stack web development and software engineering, with hands-on experience in both frontend and backend technologies. My skill set includes:</p>  
-                    <div class="skills__data">  
+                    <div class="skills__data" data-percent="95">  
                         <div class="skills__names">  
                             <i class='bx bxl-html5 skills__icon'></i>  
                             <span class="skills__name">HTML5</span>  
@@ -211,7 +217,7 @@
                             <span class="skills__percentage">95%</span>  
                         </div>  
                     </div>  
-                    <div class="skills__data">  
+                    <div class="skills__data" data-percent="85">  
                         <div class="skills__names">  
                             <i class='bx bxl-css3 skills__icon'></i>  
                             <span class="skills__name">CSS3</span>  
@@ -221,27 +227,27 @@
                             <span class="skills__percentage">85%</span>  
                         </div>  
                     </div>  
-                    <div class="skills__data">  
+                    <div class="skills__data" data-percent="75">  
                         <div class="skills__names">  
                             <i class='bx bxl-javascript skills__icon' ></i>  
-                            <span class="skills__name">JAVASCRIPT</span>  
+                            <span class="skills__name">JavaScript</span>  
                         </div>  
                         <div class="skills__bar skills__js"></div>  
                         <div>  
-                            <span class="skills__percentage">65%</span>  
+                            <span class="skills__percentage">75%</span>  
                         </div>  
                     </div>  
-                    <div class="skills__data">  
+                    <div class="skills__data" data-percent="85">  
                         <div class="skills__names">  
                             <i class='bx bxl-wordpress skills__icon'></i>  
-                            <span class="skills__name">Wordpress</span>  
+                            <span class="skills__name">WordPress</span>  
                         </div>  
                         <div class="skills__bar skills__ux"></div>  
                         <div>  
                             <span class="skills__percentage">85%</span>  
                         </div>  
                     </div>  
-                    <div class="skills__data">  
+                    <div class="skills__data" data-percent="90">  
                         <div class="skills__names">  
                             <i class='bx bxl-python skills__icon'></i>  
                             <span class="skills__name">Python</span>  
@@ -251,7 +257,7 @@
                             <span class="skills__percentage">90%</span>  
                         </div>  
                     </div>  
-                    <div class="skills__data">  
+                    <div class="skills__data" data-percent="75">  
                         <div class="skills__names">  
                             <i class="fas fa-database skills__icon"></i>  
                             <span class="skills__name">SQL</span>  
@@ -262,7 +268,7 @@
                         </div>  
                     </div>  
   
-                    <div class="skills__data">  
+                    <div class="skills__data" data-percent="80">  
                         <div class="skills__names">  
                             <i class='bx bxl-django skills__icon'></i>  
                             <span class="skills__name">Django</span>  
@@ -273,7 +279,7 @@
                         </div>  
                     </div>  
   
-                    <div class="skills__data">  
+                    <div class="skills__data" data-percent="65">  
                         <div class="skills__names">  
                             <i class='bx bxl-jquery skills__icon'></i>  
                             <span class="skills__name">jQuery</span>  
@@ -284,7 +290,7 @@
                         </div>  
                     </div>  
   
-                    <div class="skills__data">  
+                    <div class="skills__data" data-percent="70">  
                         <div class="skills__names">  
                             <i class='bx bxl-bootstrap skills__icon'></i>  
                             <span class="skills__name">Bootstrap</span>  
@@ -294,6 +300,106 @@
                             <span class="skills__percentage">70%</span>  
                         </div>  
                     </div>  
+
+                    <!-- Additional Software Developer Skills -->
+                    <div class="skills__data" data-percent="80">
+                        <div class="skills__names">
+                            <i class="fas fa-code skills__icon"></i>
+                            <span class="skills__name">Java</span>
+                        </div>
+                        <div class="skills__bar skills__java"></div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data" data-percent="85">
+                        <div class="skills__names">
+                            <i class="fab fa-git-alt skills__icon"></i>
+                            <span class="skills__name">Git & GitHub</span>
+                        </div>
+                        <div class="skills__bar skills__git"></div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data" data-percent="65">
+                        <div class="skills__names">
+                            <i class="fas fa-cube skills__icon"></i>
+                            <span class="skills__name">Docker</span>
+                        </div>
+                        <div class="skills__bar skills__docker"></div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data" data-percent="70">
+                        <div class="skills__names">
+                            <i class="fab fa-node-js skills__icon"></i>
+                            <span class="skills__name">Node.js</span>
+                        </div>
+                        <div class="skills__bar skills__node"></div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data" data-percent="70">
+                        <div class="skills__names">
+                            <i class="fab fa-react skills__icon"></i>
+                            <span class="skills__name">React</span>
+                        </div>
+                        <div class="skills__bar skills__react"></div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data" data-percent="75">
+                        <div class="skills__names">
+                            <i class="fas fa-server skills__icon"></i>
+                            <span class="skills__name">REST APIs</span>
+                        </div>
+                        <div class="skills__bar skills__api"></div>
+                        <div>
+                            <span class="skills__percentage">75%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data" data-percent="60">
+                        <div class="skills__names">
+                            <i class="fas fa-vial skills__icon"></i>
+                            <span class="skills__name">Testing (Unit/Integration)</span>
+                        </div>
+                        <div class="skills__bar skills__test"></div>
+                        <div>
+                            <span class="skills__percentage">60%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data" data-percent="85">
+                        <div class="skills__names">
+                            <i class="fas fa-brain skills__icon"></i>
+                            <span class="skills__name">Data Structures & Algorithms</span>
+                        </div>
+                        <div class="skills__bar skills__dsa"></div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data" data-percent="80">
+                        <div class="skills__names">
+                            <i class="fab fa-linux skills__icon"></i>
+                            <span class="skills__name">Linux / CLI</span>
+                        </div>
+                        <div class="skills__bar skills__linux"></div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
                 </div>  
   
                 <div>  
@@ -847,48 +953,64 @@
   
                     <div class="cert-card">  
                         <h4>Python Full Stack Developer</h4>  
-                        <p>Durga Software Solutions, Hyderabad</p>  
+                        <p class="cert-card__meta">Durga Software Solutions, Hyderabad <span class="cert-card__date">• 2024</span></p>
+                        <a class="cert-card__link" href="#" aria-label="View Python Full Stack Developer certificate">View Certificate</a>
                     </div>  
   
                     <div class="cert-card">  
                         <h4>Web Development Certification</h4>  
-                        <p>American Indian Foundation (S&P GLOBAL), Hyderabad</p>  
+                        <p class="cert-card__meta">American Indian Foundation (S&P GLOBAL), Hyderabad <span class="cert-card__date">• 2023</span></p>
+                        <a class="cert-card__link" href="#" aria-label="View Web Development certificate">View Certificate</a>
                     </div>  
   
                     <div class="cert-card">  
                         <h4>Java Certification</h4>  
-                        <p>SoloLearn</p>  
+                        <p class="cert-card__meta">SoloLearn <span class="cert-card__date">• 2022</span></p>
+                        <a class="cert-card__link" href="#" aria-label="View Java certificate">View Certificate</a>
                     </div>  
   
                     <div class="cert-card">  
                         <h4>SQL Fundamentals Certification</h4>  
-                        <p>HackerRank</p>  
+                        <p class="cert-card__meta">HackerRank <span class="cert-card__date">• 2022</span></p>
+                        <a class="cert-card__link" href="#" aria-label="View SQL certificate">View Certificate</a>
                     </div>  
   
                     <div class="cert-card">  
                         <h4>Python Data Structures</h4>  
-                        <p>SoloLearn</p>  
+                        <p class="cert-card__meta">SoloLearn <span class="cert-card__date">• 2021</span></p>
+                        <a class="cert-card__link" href="#" aria-label="View Python Data Structures certificate">View Certificate</a>
                     </div>  
   
                     <div class="cert-card">  
                         <h4>WordPress Developer Certification</h4>  
-                        <p>Vsplash Techlabs Private Limited, Hyderabad</p>  
+                        <p class="cert-card__meta">Vsplash Techlabs Private Limited, Hyderabad <span class="cert-card__date">• 2025</span></p>
+                        <a class="cert-card__link" href="#" aria-label="View WordPress certificate">View Certificate</a>
                     </div>  
   
                     <div class="cert-card">  
                         <h4>Beaver Builder Certification</h4>  
-                        <p>Vsplash Techlabs Private Limited, Hyderabad</p>  
+                        <p class="cert-card__meta">Vsplash Techlabs Private Limited, Hyderabad <span class="cert-card__date">• 2025</span></p>
+                        <a class="cert-card__link" href="#" aria-label="View Beaver Builder certificate">View Certificate</a>
                     </div>  
   
                     <div class="cert-card">  
                         <h4>WooCommerce Developer Certification</h4>  
-                        <p>Vsplash Techlabs Private Limited, Hyderabad</p>  
+                        <p class="cert-card__meta">Vsplash Techlabs Private Limited, Hyderabad <span class="cert-card__date">• 2025</span></p>
+                        <a class="cert-card__link" href="#" aria-label="View WooCommerce certificate">View Certificate</a>
                     </div>  
   
                     <div class="cert-card">  
                         <h4>TCS iON Career Edge</h4>  
-                        <p>Communication, Resume Writing & Soft Skills</p>  
+                        <p class="cert-card__meta">Communication, Resume Writing & Soft Skills <span class="cert-card__date">• 2023</span></p>
+                        <a class="cert-card__link" href="#" aria-label="View TCS iON certificate">View Certificate</a>
                     </div>  
+                    
+                    <!-- New: Software Developer Certification -->
+                    <div class="cert-card">  
+                        <h4>Software Developer Certification</h4>
+                        <p class="cert-card__meta">Institue of Software Excellence <span class="cert-card__date">• 2025</span></p>
+                        <a class="cert-card__link" href="#" aria-label="View Software Developer certificate">View Certificate</a>
+                    </div>
   
                 </div>  
             </div>  
