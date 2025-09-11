@@ -1018,18 +1018,26 @@
   
         <!-- ================== CONTACT ================== -->  
 <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact__container bd-grid">
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
-                    <input type="hidden" name="access_key" value="eb508900-c410-4e6d-9c22-d5f41edd8c11">
-                    <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                    <input type="email" name="email" placeholder="Email" class="contact__input" required>
-                    <input type="text" name="phone" placeholder="Phone Number" class="contact__input" required>
-                    
-                    <textarea name="message" placeholder="Message" class="contact__input" required></textarea>
-                    <input type="submit" value="Send" class="contact__button button">
-                </form>
-            </div>
+  <h2 class="section-title">Contact</h2>
+  <div class="contact__container bd-grid">
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+      <!-- ✅ Your Web3Forms access key -->
+      <input type="hidden" name="access_key" value="eb508900-c410-4e6d-9c22-d5f41edd8c11">
+
+      <input type="text" id="name" name="name" placeholder="Name" class="contact__input" required>
+      <input type="email" id="email" name="email" placeholder="Email" class="contact__input" required>
+      <input type="text" id="phone" name="phone" placeholder="Phone Number" class="contact__input" required>
+      
+      <textarea id="message" name="message" placeholder="Message" class="contact__input" required></textarea>
+
+      <input type="submit" value="Send" class="contact__button button">
+    </form>
+
+    <!-- ✅ Status message -->
+    <p id="contact-form-status" style="margin-top:10px; color:green;"></p>
+  </div>
+</section>
+
     </main>  
   
     <!-- ================== FOOTER ================== -->  
@@ -1044,35 +1052,51 @@
     </footer>  
   
     <!-- ================== SCROLL REVEAL ================== -->  
-    <script src="https://unpkg.com/scrollreveal"></script>  
-  
-    <!-- ================== MAIN JS ================== -->  
-    <script src="assets/js/main.js"></script>  
-    <script>  
-        //Example JavaScript For Contact Form  
-        document.getElementById('contact-form').addEventListener('submit', function(event) {  
-            event.preventDefault(); // Prevent default form submission  
-  
-            // Basic form validation  
-            const name = document.getElementById('name').value.trim();  
-            const email = document.getElementById('email').value.trim();  
-            const message = document.getElementById('message').value.trim();  
-  
-            if (!name || !email || !message) {  
-                document.getElementById('contact-form-status').textContent = 'Please fill out all fields.';  
-                return;  
-            }  
-  
-            // Simulate a successful submission (replace with actual submission logic)  
-            setTimeout(() => {  
-                document.getElementById('contact-form-status').textContent = 'Message sent successfully!';  
-                document.getElementById('name').value = '';  
-                document.getElementById('email').value = '';  
-                document.getElementById('message').value = '';  
-            }, 1500); //Simulated delay  
-        });  
-    </script>  
+<script src="https://unpkg.com/scrollreveal"></script>  
+
+<!-- ================== MAIN JS ================== -->  
+<script src="assets/js/main.js"></script>  
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+      document.getElementById('contact-form-status').style.color = 'red';
+      document.getElementById('contact-form-status').textContent = '⚠️ Please fill out all required fields.';
+      return;
+    }
+
+    // Submit form via Web3Forms
+    const formData = new FormData(this);
+
+    fetch(this.action, {
+      method: this.method,
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if(data.success) {
+        document.getElementById('contact-form-status').style.color = 'green';
+        document.getElementById('contact-form-status').textContent = '✅ Message sent successfully!';
+        this.reset();
+      } else {
+        document.getElementById('contact-form-status').style.color = 'red';
+        document.getElementById('contact-form-status').textContent = '❌ Failed to send message. Try again later.';
+      }
+    })
+    .catch(error => {
+      document.getElementById('contact-form-status').style.color = 'red';
+      document.getElementById('contact-form-status').textContent = '⚠️ Error occurred. Please try again.';
+    });
+  });
+</script>
 </body>  
 </html>  
+
 
 
